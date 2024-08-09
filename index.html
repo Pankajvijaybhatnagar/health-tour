@@ -9,14 +9,41 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Alazea - Gardening &amp; Landscaping HTML Template</title>
+    <title>Hospitals&Tourism &amp;</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="img/bg-img/l.png">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .card-bg-1 { background-image: url('img/bg-img/1.jpg');}
+        .card-bg-2 { background-image: url('path/to/card-bg-2.jpg');}
+        .card-bg-3 { background-image: url('path/to/card-bg-3.jpg');}
+        .card-bg-4 { background-image: url('path/to/card-bg-4.jpg');}
+        .card-img-overlay {
+            /* background: rgba(219, 214, 214, 0.5); */
+            transition: all 0.5s;
+        }
+        .card:hover .card-img-overlay {
+            background: rgba(168, 158, 158, 0.9);
+            padding-top: 24px;
+        }
+        .card-img {
+            transition: transform 0.5s;
+        }
+        .card:hover .card-img {
+            transform: translateY(-2%);
+        }
+        .card-text {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .card:hover .card-text {
+            opacity: 2;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +51,7 @@
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
         <div class="preloader-img">
-            <img src="img/core-img/leaf.png" alt="">
+            <img src="img/bg-img/l.png" alt="the pic">
         </div>
     </div>
 
@@ -82,7 +109,7 @@
                     <nav class="classy-navbar justify-content-between" id="alazeaNav">
 
                         <!-- Nav Brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <!-- <a href="index.html" class="nav-brand"><img src="img/bg-img/Screenshot_2024-08-09_121620-removebg-preview.png " style="width:240px;" alt=""></a> -->
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -102,46 +129,13 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About</a>
-                                        <ul class="dropdown">
-                                           
-                                            <li><a href="shop.html">FAQ</a>
-                                                <!-- <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                </ul> -->
-                                            </li>
-                                            
-                                           
-                                        </ul>
+                                    <li><a href="about.html">FAQ</a>
+                                    <li><a href="about.html">Treatment</a>
+                                    <li><a href="about.html">Hospital</a>
+                                       
                                     </li>
-                                    <li><a href="#">Health</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Doctor</a></li>
-                                            <li><a href="about.html">Treatment</a></li>
-                                            <li><a href="shop.html">Hospital</a>
-                                                <!-- <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                </ul> -->
-                                            </li>
-                                            <li><a href="portfolio.html">Specialization</a>
-                                                <!-- <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
-                                                </ul> -->
-                                            </li>
-                                            <!-- <li><a href="blog.html">Blog</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
-                                                </ul>
-                                            </li> -->
-                                            <!-- <li><a href="contact.html">Contact</a></li> -->
-                                        </ul>
+                                    <li><a href="#">Doctor</a></li>
+                                            
                                     </li>
                                     <li><a href="shop.html">Tourism</a>
                                         <ul class="dropdown">
@@ -197,7 +191,7 @@
                         <div class="col-12">
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
-                                <h2>Plants exist in the weather and light rays that surround them</h2>
+                                <h2>NABH APPROVED HOSPITALS</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
@@ -212,13 +206,13 @@
             <!-- Single Hero Post -->
             <div class="single-hero-post bg-overlay">
                 <!-- Post Image -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/2.jpg);"></div>
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/doctor-reaches-towards-shelf.jpg);"></div>
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
-                                <h2>Plants exist in the weather and light rays that surround them</h2>
+                                <h2>SPECIALIZED DOCTORS</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
@@ -233,6 +227,64 @@
         </div>
     </section>
     <!-- ##### Hero Area End ##### -->
+     <!-- doctor card -->
+     <section>
+        <div class="container my-5">
+            <h1 class="text-lg font-weight-semibold text-center mb-5">DOCTORS</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card position-relative h-100 text-white overflow-hidden">
+                        <img src="img/images/img-11.png" class="card-img" alt="Mountain View">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="card-title">Mountain View</h2>
+                            <p class="card-text mt-4 font-italic">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card position-relative h-100 text-white overflow-hidden">
+                        <img src="img/images/img-4.png" class="card-img" alt="To The Beach">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="card-title">To The Beach</h2>
+                            <p class="card-text mt-4 font-italic">Plan your next beach trip with these fabulous destinations</p>
+                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card position-relative h-100 text-white overflow-hidden">
+                        <img src="img/images/img-12.png" class="card-img" alt="Desert Destinations">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="card-title">Desert Destinations</h2>
+                            <p class="card-text mt-4 font-italic">It's the desert you've always dreamed of</p>
+                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="card position-relative h-100 text-white overflow-hidden">
+                        <img src="img/images/img-10.png" class="card-img" alt="Explore The Galaxy">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h2 class="card-title">Explore The Galaxy</h2>
+                            <p class="card-text mt-4 font-italic">Seriously, straight up, just blast off into outer space today</p>
+                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+     
+
+      <!-- doctor card end -->
 
     <!-- ##### Service Area Start ##### -->
     <section class="our-services-area bg-gray section-padding-100-0">
@@ -305,6 +357,7 @@
         </div>
     </section>
     <!-- ##### Service Area End ##### -->
+     
 
     <!-- ##### About Area Start ##### -->
     <section class="about-us-area section-padding-100-0">

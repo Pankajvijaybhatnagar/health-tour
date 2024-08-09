@@ -355,8 +355,8 @@ img {
     min-width: 150px;
     height: 46px;
     color: $white-color;
-    background-color: $pri-color;
-    border: 2px solid $pri-color;
+    background-color: #4579c7;
+    border: 2px solid #459dc7;
     border-radius: 2px;
     padding: 0 20px;
     font-size: 16px;
@@ -367,7 +367,7 @@ img {
     &:hover,
     &:focus {
         font-size: 16px;
-        color: $pri-color;
+        color: #4579c7;
         font-weight: 600;
         background-color: transparent;
         box-shadow: none;
