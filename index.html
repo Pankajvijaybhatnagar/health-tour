@@ -18,6 +18,24 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
     <style>
+       @keyframes interZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Adjust the maximum zoom level */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to the image */
+.inter-zoom {
+    animation: interZoom 2s ease-in-out infinite; /* Adjust the duration as needed */
+    transition: transform 0.5s ease; /* Optional: smooth transition */
+    object-fit: cover;
+}
         .card-bg-1 { background-image: url('img/bg-img/1.jpg');}
         .card-bg-2 { background-image: url('path/to/card-bg-2.jpg');}
         .card-bg-3 { background-image: url('path/to/card-bg-3.jpg');}
@@ -27,7 +45,7 @@
             transition: all 0.5s;
         }
         .card:hover .card-img-overlay {
-            background: rgba(168, 158, 158, 0.9);
+            background: rgba(176, 247, 62, 0.9);
             padding-top: 24px;
         }
         .card-img {
@@ -239,7 +257,7 @@
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title">Mountain View</h2>
                             <p class="card-text mt-4 font-italic">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                            <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
@@ -247,11 +265,11 @@
                 <!-- Card 2 -->
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
-                        <img src="img/images/img-4.png" class="card-img" alt="To The Beach">
+                        <img src="img/bg-img/doc.jpeg" class="card-img" alt="To The Beach">
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-                            <h2 class="card-title">To The Beach</h2>
+                            <h2 class="card-title"></h2>
                             <p class="card-text mt-4 font-italic">Plan your next beach trip with these fabulous destinations</p>
-                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                            <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
@@ -259,11 +277,11 @@
                 <!-- Card 3 -->
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
-                        <img src="img/images/img-12.png" class="card-img" alt="Desert Destinations">
+                        <img src="img/bg-img/doc2.jpeg" class="card-img" alt="Desert Destinations">
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-                            <h2 class="card-title">Desert Destinations</h2>
+                            <h2 class="card-title"></h2>
                             <p class="card-text mt-4 font-italic">It's the desert you've always dreamed of</p>
-                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                            <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
@@ -275,7 +293,7 @@
                         <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title">Explore The Galaxy</h2>
                             <p class="card-text mt-4 font-italic">Seriously, straight up, just blast off into outer space today</p>
-                            <a href="#" class="btn btn-light text-dark mt-4">View Trips</a>
+                            <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
@@ -311,7 +329,7 @@
                             </div>
                             <!-- Content -->
                             <div class="service-content">
-                                <h5>Plants Care</h5>
+                                <h5>Doctors Consultation</h5>
                                 <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
                             </div>
                         </div>
@@ -324,7 +342,7 @@
                             </div>
                             <!-- Content -->
                             <div class="service-content">
-                                <h5>Pressure Washing</h5>
+                                <h5>Health reports</h5>
                                 <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
                             </div>
                         </div>
@@ -337,7 +355,7 @@
                             </div>
                             <!-- Content -->
                             <div class="service-content">
-                                <h5>Tree Service &amp; Trimming</h5>
+                                <h5>Pic and drop service</h5>
                                 <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
                             </div>
                         </div>
@@ -346,12 +364,12 @@
                 </div>
 
                 <div class="col-12 col-lg-6">
-                    <div class="alazea-video-area bg-overlay mb-100">
+                    <!-- <div class="alazea-video-area bg-overlay mb-100">
                         <img src="img/bg-img/23.jpg" alt="">
                         <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -375,8 +393,19 @@
                     <div class="alazea-progress-bar mb-50">
                         <!-- Single Progress Bar -->
                         <div class="single_progress_bar">
-                            <p>Office plants</p>
+                            <p>DOCTORS</p>
                             <div id="bar1" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="90"></span>
+                            </div>
+                        </div>
+
+                        <!-- Single Progress Bar -->
+                        <div class="single_progress_bar">
+                            <p>CLEINTS</p>
+                            <div id="bar2" class="barfiller">
                                 <div class="tipWrap">
                                     <span class="tip"></span>
                                 </div>
@@ -386,18 +415,7 @@
 
                         <!-- Single Progress Bar -->
                         <div class="single_progress_bar">
-                            <p>Field manager</p>
-                            <div id="bar2" class="barfiller">
-                                <div class="tipWrap">
-                                    <span class="tip"></span>
-                                </div>
-                                <span class="fill" data-percentage="70"></span>
-                            </div>
-                        </div>
-
-                        <!-- Single Progress Bar -->
-                        <div class="single_progress_bar">
-                            <p>Landscape design</p>
+                            <p>HOSPITALS INTERIOR FACILITY</p>
                             <div id="bar3" class="barfiller">
                                 <div class="tipWrap">
                                     <span class="tip"></span>
@@ -408,7 +426,7 @@
 
                         <!-- Single Progress Bar -->
                         <div class="single_progress_bar">
-                            <p>Garden Care</p>
+                            <p>QUALITY</p>
                             <div id="bar4" class="barfiller">
                                 <div class="tipWrap">
                                     <span class="tip"></span>
@@ -426,7 +444,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b1.png" alt="">
-                                    <h5>Quality Products</h5>
+                                    <h5>Quality Service</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
                             </div>
@@ -435,7 +453,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b2.png" alt="">
-                                    <h5>Perfect Service</h5>
+                                    <h5>Perfect treatment</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
                             </div>
@@ -444,7 +462,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b3.png" alt="">
-                                    <h5>100% Natural</h5>
+                                    <h5>100% Natural Ayurvedic treatment</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
                             </div>
@@ -453,7 +471,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b4.png" alt="">
-                                    <h5>Environmentally friendly</h5>
+                                    <h5>Friendly Doctors</h5>
                                     <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
                                 </div>
                             </div>
@@ -480,7 +498,7 @@
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
-                        <h2>OUR PORTFOLIO</h2>
+                        <h2>Services Glance</h2>
                         <p>We devote all of our experience and efforts for creation</p>
                     </div>
                 </div>
@@ -507,13 +525,13 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/AA.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/16.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                        <a href="img/bg-img/AA.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
-                                <h5>Office Plants</h5>
+                                <h3>Consultation</h3>
+                                <h5></h5>
                             </div>
                         </a>
                     </div>
@@ -522,12 +540,12 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/SPINE.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/17.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                        <a href="img/bg-img/SPINE.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
+                                <h3>Spine Treatment</h3>
                                 <h5>Office Plants</h5>
                             </div>
                         </a>
@@ -537,13 +555,13 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/ABC.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/18.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
+                        <a href="img/bg-img/ABC.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
-                                <h5>Office Plants</h5>
+                                <h3>Hospital beds</h3>
+                                <h5></h5>
                             </div>
                         </a>
                     </div>
@@ -552,13 +570,13 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/BCD.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/19.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                        <a href="img/bg-img/BCD.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
-                                <h5>Office Plants</h5>
+                                <h3>Operational tools</h3>
+                                <h5></h5>
                             </div>
                         </a>
                     </div>
@@ -567,13 +585,13 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp" data-wow-delay="100ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/20.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/EFG.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/20.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                        <a href="img/bg-img/EFG.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
-                                <h5>Office Plants</h5>
+                                <h3>Blood pressure machine</h3>
+                                <h5></h5>
                             </div>
                         </a>
                     </div>
@@ -582,13 +600,13 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/21.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/REPORT.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/21.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                        <a href="img/bg-img/REPORT.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
                             <div class="port-hover-text">
-                                <h3>Minimal Flower Store</h3>
-                                <h5>Office Plants</h5>
+                                <h3>Reports</h3>
+                                <h5></h5>
                             </div>
                         </a>
                     </div>
@@ -633,7 +651,7 @@
                                     <div class="testimonial-content">
                                         <!-- Section Heading -->
                                         <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
+                                            <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
                                         <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
@@ -658,7 +676,7 @@
                                     <div class="testimonial-content">
                                         <!-- Section Heading -->
                                         <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
+                                            <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
                                         <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
@@ -683,7 +701,7 @@
                                     <div class="testimonial-content">
                                         <!-- Section Heading -->
                                         <div class="section-heading">
-                                            <h2>TESTIMONIAL</h2>
+                                            <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
                                         <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
@@ -710,7 +728,7 @@
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
-                        <h2>NEW ARRIVALS</h2>
+                        <h2>Our Tests</h2>
                         <p>We have the latest products, it must be exciting for you</p>
                     </div>
                 </div>
@@ -722,17 +740,17 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Product Image -->
-                        <div class="product-img">
-                            <a href="shop-details.html"><img src="img/bg-img/9.jpg" alt=""></a>
+                        <div class="product-img" style="overflow: hidden";>
+                            <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet.jpeg" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag">
                                 <a href="#">Hot</a>
                             </div>
-                            <div class="product-meta d-flex">
+                            <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -748,13 +766,13 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="200ms">
                         <!-- Product Image -->
-                        <div class="product-img">
-                            <a href="shop-details.html"><img src="img/bg-img/10.jpg" alt=""></a>
-                            <div class="product-meta d-flex">
+                        <div style="overflow: hidden;" class="product-img ">
+                            <img class="inter-zoom" src="img/bg-img/tet4.jpeg" alt="">
+                            <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -770,13 +788,13 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Product Image -->
-                        <div class="product-img">
-                            <a href="shop-details.html"><img src="img/bg-img/11.jpg" alt=""></a>
-                            <div class="product-meta d-flex">
+                        <div class="product-img" style="overflow: hidden";>
+                            <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet1.jpeg" alt=""></a>
+                            <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
                                 <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -792,17 +810,17 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
                         <!-- Product Image -->
-                        <div class="product-img">
-                            <a href="shop-details.html"><img src="img/bg-img/12.jpg" alt=""></a>
+                        <div class="product-img" style="overflow: hidden";>
+                            <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet3.jpeg" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag sale-tag">
                                 <a href="#">Hot</a>
                             </div>
-                            <div class="product-meta d-flex">
+                            <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
-                                <a href="cart.html" class="add-to-cart-btn">Add to cart</a>
-                                <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div>
+                                 <a href="cart.html" class="add-to-cart-btn">Add to cart</a> -->
+                                <!-- <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div> --> 
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -830,7 +848,7 @@
                 <div class="col-12">
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
-                        <h2>LATEST NEWS</h2>
+                        <h2>Medical Tourism</h2>
                         <p>The breaking news about Gardening &amp; House plants</p>
                     </div>
                 </div>
@@ -901,13 +919,13 @@
     <!-- ##### Blog Area End ##### -->
 
     <!-- ##### Subscribe Area Start ##### -->
-    <section class="subscribe-newsletter-area" style="background-image: url(img/bg-img/subscribe.png);">
+    <section class="subscribe-newsletter-area" style="background-image: url(img/bg-img/pic.png);">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 col-lg-5">
                     <!-- Section Heading -->
                     <div class="section-heading mb-0">
-                        <h2>Join the Newsletter</h2>
+                        <h2>Stay Connected with Us</h2>
                         <p>Subscribe to our newsletter and get 10% off your first purchase</p>
                     </div>
                 </div>
@@ -924,7 +942,7 @@
 
         <!-- Subscribe Side Thumbnail -->
         <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
-            <img class="first-img" src="img/core-img/leaf.png" alt="">
+            <img class="first-img" style="width: 140px;" src="img/bg-img/l.png " alt="">
         </div>
     </section>
     <!-- ##### Subscribe Area End ##### -->
