@@ -64,7 +64,7 @@
     </style>
 </head>
 
-<body>
+<body class="overflow-hidden">
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
@@ -305,8 +305,8 @@
       <!-- doctor card end -->
 
     <!-- ##### Service Area Start ##### -->
-    <section class="our-services-area bg-gray section-padding-100-0">
-        <div class="container">
+    <section style="overflow: hidden;" class="our-services-area bg-gray section-padding-100-0 border border-danger overflow-hidden">
+        <div max-w class="container overflow-hidden">
             <div class="row">
                 <div class="col-12">
                     <!-- Section Heading -->
@@ -362,10 +362,25 @@
 
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6 position-relative">
-                    <img src="img/bg-img/hppng.png" alt="">
-                    <img class="position-absolute" src="img/bg-img/pl.png" alt="">
+<style>
+    .jahaj{
+       animation: move 10s forwards infinite;
+    }
+    @keyframes move {
+        0%{
+            transform: translateX(30%);
+        }
+        5%{opacity: 1;}
+        100%{
+            transform: translateX(-280vw);
+            scale: 0.3;
+            opacity: 0;
+        }
+    }
+</style>
+                <div class="col-12 col-lg-6 position-relative ">
+                    <img class="z-inde" src="img/bg-img/hppng.png" alt="">
+                    <img class="position-absolute jahaj" src="img/bg-img/pl.png" alt="">
                     <!-- <div class="alazea-video-area bg-overlay mb-100">
                         <img src="img/bg-img/23.jpg" alt="">
                         <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
