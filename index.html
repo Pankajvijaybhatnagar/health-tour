@@ -87,7 +87,7 @@
     </style>
 </head>
 
-<body>
+<body class="overflow-hidden">
     <!-- Preloader -->
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-circle"></div>
@@ -304,9 +304,8 @@
                         <div
                             class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title"></h2>
-                            <p class="card-text mt-4 font-italic">Plan your next beach trip with these fabulous
-                                destinations</p>
-                            <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
+                            <p class="card-text mt-4 font-italic">Plan your next beach trip with these fabulous destinations</p>
+                            <a href="single-post.html" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
@@ -345,8 +344,8 @@
     <!-- doctor card end -->
 
     <!-- ##### Service Area Start ##### -->
-    <section class="our-services-area bg-gray section-padding-100-0">
-        <div class="container">
+    <section style="overflow: hidden;" class="our-services-area bg-gray section-padding-100-0 border border-danger overflow-hidden">
+        <div max-w class="container overflow-hidden">
             <div class="row">
                 <div class="col-12">
                     <!-- Section Heading -->
@@ -404,142 +403,170 @@
 
                     </div>
                 </div>
-
-    </section>
-    <!-- ##### Service Area End ##### --
-
-  <!-- ------------------------------------Journey------------------------------------- -->
-    <div class="bg-card">
-        <div class="container text-center .bg-card py-5 ">
-            <h2 class=".text-dark">Complete Patient Journey</h2>
-            <p class="text-success font-weight-bold h5">Check the website to find out your desired treatment in India
-                across both Modern and Indian Traditional Medical Treatments for holistic well-being.</p>
-
-            <div class="row">
-                <!-- First row with 4 items -->
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span class="badge text-white bg-secondary position-absolute top-0 start-1 p-3 rounded-circle">1</span>
-                        </div>
-                        <img src="img/images/start.avif" class="card-img-top rounded-circle p-3"
-                            alt="Start Your Medical Journey">
-                        <div class="card-body">
-                            <h3 class="card-title">Start Your Medical Journey in India</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">2</span>
-                        </div>
-                        <img src="img/images/Treatment.png" class="card-img-top rounded-circle p-3"
-                            alt="Search Treatment Options">
-                        <div class="card-body">
-                            <h3 class="card-title">Search Treatment Options</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">3</span>
-                        </div>
-                        <img src="img/images/Connect.avif" class="card-img-top rounded-circle p-3"
-                            alt="Connect with Medical Facilitators">
-                        <div class="card-body">
-                            <h3 class="card-title">Connect with Medical Facilitators</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">4</span>
-                        </div>
-                        <img src="img/images/history.png" class="card-img-top rounded-circle p-2"
-                            alt="Share Medical History">
-                        <div class="card-body">
-                            <h3 class="card-title">Share Medical History with Doctors</h3>
-                        </div>
-                    </div>
+<style>
+    .jahaj{
+       animation: move 10s forwards infinite;
+    }
+    @keyframes move {
+        0%{
+            transform: translateX(30%);
+        }
+        5%{opacity: 1;}
+        100%{
+            transform: translateX(-280vw);
+            scale: 0.3;
+            opacity: 0;
+        }
+    }
+</style>
+                <div class="col-12 col-lg-6 position-relative ">
+                    <img class="z-inde" src="img/bg-img/hppng.png" alt="">
+                    <img class="position-absolute jahaj" src="img/bg-img/pl.png" alt="">
+                    <!-- <div class="alazea-video-area bg-overlay mb-100">
+                        <img src="img/bg-img/23.jpg" alt="">
+                        <a href="http://www.youtube.com/watch?v=7HKoqNJtMTQ" class="video-icon">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </a>
+                    </div> -->
                 </div>
             </div>
-
-            <div class="row mt-4">
-                <!-- Second row with 4 items -->
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">5</span>
-                        </div>
-                        <img src="img/images/Schedule.png" class="card-img-top rounded-circle p-2"
-                            alt="Schedule Appointment">
-                        <div class="card-body">
-                            <h3 class="card-title">Schedule Appointment</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">6</span>
-                        </div>
-                        <img src="img/images/Fly.jpg" class="card-img-top rounded-circle p-2" alt="Fly to India">
-                        <div class="card-body">
-                            <h3 class="card-title">Fly to India</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">7</span>
-                        </div>
-                        <img src="img/images/Receive.jpg" class="card-img-top rounded-circle p-2"
-                            alt="Receive Treatment">
-                        <div class="card-body">
-                            <h3 class="card-title">Receive Treatment</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100 ">
-                        <div class="position-absolute">
-                            <span
-                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">8</span>
-                        </div>
-                        <img src="img/images/Return.jpg" class="card-img-top rounded-circle p-2"
-                            alt="Post-Operative Care">
-                        <div class="card-body">
-                            <h3 class="card-title">Return Home & Seek Post-Operative Care</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-    </div>
+    </section>
+    <!-- ##### Service Area End ##### -->
+     <!-- ------------------------------------------------------------------------ -->
+    <section class="alazea-blog-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>TREATMENT</h2>
+                        <p>The breaking news about Gardening &amp; House plants</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row justify-content-center">
+                <style>
+                    /* Base styles for the blog post card */
+.single-blog-post {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Animation effect on hover */
+.single-blog-post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-    <!-- ------------------------------------Journey end  ------------------------------------- -->
+/* Style for post thumbnail */
+.post-thumbnail {
+    transition: transform 0.3s ease;
+}
 
+/* Animation effect on hover for image */
+.single-blog-post:hover .post-thumbnail {
+    transform: scale(1.1);
+}
 
+/* Style for post title */
+.post-title {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Animation effect on hover for title */
+.single-blog-post:hover .post-title {
+    color: #007bff;
+}
+
+/* Style for post meta */
+.post-meta a {
+    text-decoration: none;
+    color: #888;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Animation effect on hover for meta info */
+.single-blog-post:hover .post-meta a {
+    color: #007bff;
+}
+
+/* Style for post excerpt */
+.post-excerpt {
+    color: #666;
+}
+
+                </style>
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card single-blog-post mb-3">
+                        <a href="single-post.html">
+                            <img src="img/bg-img/treatments1.jpg" class="card-img-top post-thumbnail" alt="">
+                        </a>
+                        <div class="card-body post-content">
+                            <a href="single-post.html" class="card-title post-title align-center">
+                                <h5 class="mb-3">AYURVEDIC</h5>
+                            </a>
+                            <div class="post-meta mb-3">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
+                            </div>
+                            <p class="card-text post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/doctor-encouraging-a-patient.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>ALLOPATHIC</h5>
+                            </a>
+                            <div class="post-meta">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
+                            </div>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/tour2.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>HOMOPATHEC</h5>
+                            </a>
+                            <div class="post-meta">
+                                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2018</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
+                            </div>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     
+<!-- ------------------------------------------------------------------------------------------------------------ -->
     <!-- ##### About Area Start ##### -->
     <section class="about-us-area section-padding-100-0">
         <div class="container">
@@ -1051,7 +1078,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-blog-post mb-100">
                         <div class="post-thumbnail mb-30">
-                            <a href="single-post.html"><img src="img/bg-img/6.jpg" alt=""></a>
+                            <a href="single-post.html"><img src="img/bg-img/tour1.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">
@@ -1093,7 +1120,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-blog-post mb-100">
                         <div class="post-thumbnail mb-30">
-                            <a href="single-post.html"><img src="img/bg-img/8.jpg" alt=""></a>
+                            <a href="single-post.html"><img src="img/bg-img/tour2.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">
