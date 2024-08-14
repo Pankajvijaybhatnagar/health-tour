@@ -2641,4 +2641,41 @@ img {
 
 /* ======= The End ======= */
 
+
+/* <!-- ------------------------------------Journey CSS------------------------------------- -- */
+.card-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.badge {
+  font-size: 1rem;
+}
+.card-img-top {
+  max-width: 70% !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  margin: auto !important;
+}
+
+.bg-card {
+  background: linear-gradient(to right, #e1fdd4, #a3c990) !important;
+}
+.card:hover {
+background-color: #e4e9dc;
+scale: 1.1;
+}
+
+
 /*# sourceMappingURL=style.css.map */

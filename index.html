@@ -18,46 +18,69 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
     <style>
-       @keyframes interZoom {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1); /* Adjust the maximum zoom level */
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+        @keyframes interZoom {
+            0% {
+                transform: scale(1);
+            }
 
-/* Apply the animation to the image */
-.inter-zoom {
-    animation: interZoom 2s ease-in-out infinite; /* Adjust the duration as needed */
-    transition: transform 0.5s ease; /* Optional: smooth transition */
-    object-fit: cover;
-}
-        .card-bg-1 { background-image: url('img/bg-img/1.jpg');}
-        .card-bg-2 { background-image: url('path/to/card-bg-2.jpg');}
-        .card-bg-3 { background-image: url('path/to/card-bg-3.jpg');}
-        .card-bg-4 { background-image: url('path/to/card-bg-4.jpg');}
+            50% {
+                transform: scale(1.1);
+                /* Adjust the maximum zoom level */
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Apply the animation to the image */
+        .inter-zoom {
+            animation: interZoom 2s ease-in-out infinite;
+            /* Adjust the duration as needed */
+            transition: transform 0.5s ease;
+            /* Optional: smooth transition */
+            object-fit: cover;
+        }
+
+        .card-bg-1 {
+            background-image: url('img/bg-img/1.jpg');
+        }
+
+        .card-bg-2 {
+            background-image: url('path/to/card-bg-2.jpg');
+        }
+
+        .card-bg-3 {
+            background-image: url('path/to/card-bg-3.jpg');
+        }
+
+        .card-bg-4 {
+            background-image: url('path/to/card-bg-4.jpg');
+        }
+
         .card-img-overlay {
             /* background: rgba(219, 214, 214, 0.5); */
             transition: all 0.5s;
         }
+
         .card:hover .card-img-overlay {
             background: rgba(176, 247, 62, 0.9);
             padding-top: 24px;
         }
+
         .card-img {
             transition: transform 0.5s;
         }
+
         .card:hover .card-img {
             transform: translateY(-2%);
         }
+
         .card-text {
             opacity: 0;
             transition: opacity 0.5s;
         }
+
         .card:hover .card-text {
             opacity: 2;
         }
@@ -84,8 +107,12 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: infodeercreative@gmail.com</span></a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122 122</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                    title="infodeercreative@gmail.com"><i class="fa fa-envelope-o"
+                                        aria-hidden="true"></i> <span>Email: infodeercreative@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i
+                                        class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +1 234 122
+                                        122</span></a>
                             </div>
 
                             <!-- Top Header Content -->
@@ -93,7 +120,9 @@
                                 <!-- Language Dropdown -->
                                 <div class="language-dropdown">
                                     <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</button>
+                                        <button class="btn btn-secondary dropdown-toggle mr-30" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Language</button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#">USA</a>
                                             <a class="dropdown-item" href="#">UK</a>
@@ -110,7 +139,8 @@
                                 </div>
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span class="cart-quantity">(1)</span></span></a>
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span
+                                                class="cart-quantity">(1)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -150,22 +180,20 @@
                                     <li><a href="about.html">FAQ</a>
                                     <li><a href="about.html">Treatment</a>
                                     <li><a href="about.html">Hospital</a>
-                                       
+
                                     </li>
                                     <li><a href="#">Doctor</a></li>
-                                            
+
                                     </li>
                                     <li><a href="shop.html">Tourism</a>
                                         <ul class="dropdown">
-                                        <li><a href="shop.html">Gujrat tourism</a></li>
-                                        <li><a href="shop.html">Gujrat tourism</a></li>
-                                        <li><a href="shop.html">Gujrat tourism</a></li>
-                                        <li><a href="shop.html">Gujrat tourism</a></li>
-                                        <li><a href="shop.html">Gujrat tourism</a></li>
-                                            
-                                           
+                                            <li><a href="shop.html">Gujrat Tourism</a></li>
+                                            <li><a href="shop.html">Rajastan Tourism</a></li>
+                                            <li><a href="shop.html">Delhi NCR Tourism</a></li>
+                                            <li><a href="shop.html">Himachal Tourism</a></li>
+                                            <li><a href="shop.html">Haryana Tourism</a></li>
                                         </ul>
-                                    
+
                                     </li>
                                     <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
                                     <li><a href="contact.html">Contact</a></li>
@@ -188,10 +216,10 @@
                             <button type="submit" class="d-none"></button>
                         </form> 
                         Close Icon -->
-                        <!-- <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div> -->
-                    </div> 
+                    <!-- <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div> -->
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
@@ -210,7 +238,9 @@
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
                                 <h2>NABH APPROVED HOSPITALS</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante
+                                    nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis
+                                    nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
                                     <a href="#" class="btn alazea-btn active">CONTACT US</a>
@@ -224,14 +254,17 @@
             <!-- Single Hero Post -->
             <div class="single-hero-post bg-overlay">
                 <!-- Post Image -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/doctor-reaches-towards-shelf.jpg);"></div>
+                <div class="slide-img bg-img"
+                    style="background-image: url(img/bg-img/doctor-reaches-towards-shelf.jpg);"></div>
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
                                 <h2>SPECIALIZED DOCTORS</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante
+                                    nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis
+                                    nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
                                     <a href="#" class="btn alazea-btn active">CONTACT US</a>
@@ -245,8 +278,8 @@
         </div>
     </section>
     <!-- ##### Hero Area End ##### -->
-     <!-- doctor card -->
-     <section>
+    <!-- doctor card -->
+    <section>
         <div class="container my-5">
             <h1 class="text-lg font-weight-semibold text-center mb-5">DOCTORS</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -254,55 +287,61 @@
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
                         <img src="img/images/img-11.png" class="card-img" alt="Mountain View">
-                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title">Mountain View</h2>
-                            <p class="card-text mt-4 font-italic">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                            <p class="card-text mt-4 font-italic">Check out all of these gorgeous mountain trips with
+                                beautiful views of, you guessed it, the mountains</p>
                             <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 2 -->
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
                         <img src="img/bg-img/doc.jpeg" class="card-img" alt="To The Beach">
-                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title"></h2>
                             <p class="card-text mt-4 font-italic">Plan your next beach trip with these fabulous destinations</p>
                             <a href="single-post.html" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 3 -->
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
                         <img src="img/bg-img/doc2.jpeg" class="card-img" alt="Desert Destinations">
-                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title"></h2>
                             <p class="card-text mt-4 font-italic">It's the desert you've always dreamed of</p>
                             <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 4 -->
                 <div class="col">
                     <div class="card position-relative h-100 text-white overflow-hidden">
                         <img src="img/images/img-10.png" class="card-img" alt="Explore The Galaxy">
-                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                        <div
+                            class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                             <h2 class="card-title">Explore The Galaxy</h2>
-                            <p class="card-text mt-4 font-italic">Seriously, straight up, just blast off into outer space today</p>
+                            <p class="card-text mt-4 font-italic">Seriously, straight up, just blast off into outer
+                                space today</p>
                             <a href="#" class="btn btn-light text-dark mt-4">View detail</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      </section>
-     
+    </section>
 
-      <!-- doctor card end -->
+
+    <!-- doctor card end -->
 
     <!-- ##### Service Area Start ##### -->
     <section style="overflow: hidden;" class="our-services-area bg-gray section-padding-100-0 border border-danger overflow-hidden">
@@ -316,7 +355,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-5">
                     <div class="alazea-service-area mb-100">
@@ -330,7 +368,8 @@
                             <!-- Content -->
                             <div class="service-content">
                                 <h5>Doctors Consultation</h5>
-                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat
+                                    sodales.service its.</p>
                             </div>
                         </div>
 
@@ -343,7 +382,8 @@
                             <!-- Content -->
                             <div class="service-content">
                                 <h5>Health reports</h5>
-                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat
+                                    sodales.service its.</p>
                             </div>
                         </div>
 
@@ -356,7 +396,8 @@
                             <!-- Content -->
                             <div class="service-content">
                                 <h5>Pic and drop service</h5>
-                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat sodales.service its.</p>
+                                <p>In Aenean purus, pretium sito amet sapien denim moste consectet sedoni urna placerat
+                                    sodales.service its.</p>
                             </div>
                         </div>
 
@@ -391,7 +432,138 @@
             </div>
         </div>
     </section>
+<<<<<<< HEAD
     
+=======
+
+    <div class="bg-card">
+        <div class="container text-center .bg-card py-5 ">
+            <h2 class=".text-dark">Complete Patient Journey</h2>
+            <p class="text-success font-weight-bold h5">Check the website to find out your desired treatment in India
+                across both Modern and Indian Traditional Medical Treatments for holistic well-being.</p>
+
+            <div class="row">
+                <!-- First row with 4 items -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span class="badge text-white bg-secondary position-absolute top-0 start-1 p-3 rounded-circle">1</span>
+                        </div>
+                        <img src="img/images/start.avif" class="card-img-top rounded-circle p-3"
+                            alt="Start Your Medical Journey">
+                        <div class="card-body">
+                            <h3 class="card-title">Start Your Medical Journey in India</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">2</span>
+                        </div>
+                        <img src="img/images/Treatment.png" class="card-img-top rounded-circle p-3"
+                            alt="Search Treatment Options">
+                        <div class="card-body">
+                            <h3 class="card-title">Search Treatment Options</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">3</span>
+                        </div>
+                        <img src="img/images/Connect.avif" class="card-img-top rounded-circle p-3"
+                            alt="Connect with Medical Facilitators">
+                        <div class="card-body">
+                            <h3 class="card-title">Connect with Medical Facilitators</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">4</span>
+                        </div>
+                        <img src="img/images/history.png" class="card-img-top rounded-circle p-2"
+                            alt="Share Medical History">
+                        <div class="card-body">
+                            <h3 class="card-title">Share Medical History with Doctors</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Second row with 4 items -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">5</span>
+                        </div>
+                        <img src="img/images/Schedule.png" class="card-img-top rounded-circle p-2"
+                            alt="Schedule Appointment">
+                        <div class="card-body">
+                            <h3 class="card-title">Schedule Appointment</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">6</span>
+                        </div>
+                        <img src="img/images/Fly.jpg" class="card-img-top rounded-circle p-2" alt="Fly to India">
+                        <div class="card-body">
+                            <h3 class="card-title">Fly to India</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">7</span>
+                        </div>
+                        <img src="img/images/Receive.jpg" class="card-img-top rounded-circle p-2"
+                            alt="Receive Treatment">
+                        <div class="card-body">
+                            <h3 class="card-title">Receive Treatment</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card h-100 ">
+                        <div class="position-absolute">
+                            <span
+                                class="badge bg-secondary text-white position-absolute top-0 start-0 translate-middle p-3 rounded-circle">8</span>
+                        </div>
+                        <img src="img/images/Return.jpg" class="card-img-top rounded-circle p-2"
+                            alt="Post-Operative Care">
+                        <div class="card-body">
+                            <h3 class="card-title">Return Home & Seek Post-Operative Care</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+>>>>>>> 9810c23f4983bbad9c9f63236d733f7b6bf1d3f3
     <!-- ##### Service Area End ##### -->
      <!-- ------------------------------------------------------------------------ -->
     <section class="alazea-blog-area section-padding-100-0">
@@ -537,7 +709,8 @@
                         <h2>ABOUT US</h2>
                         <p>We are leading in the plants service fields.</p>
                     </div>
-                    <p>Quisque orci quam, vulputate non commodo finibus, molestie ac ante. Duis in sceleri quesem. Nulla sit amet varius nunc. Maecenas dui, tempeu ullam corper in.</p>
+                    <p>Quisque orci quam, vulputate non commodo finibus, molestie ac ante. Duis in sceleri quesem. Nulla
+                        sit amet varius nunc. Maecenas dui, tempeu ullam corper in.</p>
 
                     <!-- Progress Bar Content Area -->
                     <div class="alazea-progress-bar mb-50">
@@ -595,7 +768,8 @@
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b1.png" alt="">
                                     <h5>Quality Service</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel
+                                        aliquam manta lagorn.</p>
                                 </div>
                             </div>
 
@@ -604,7 +778,8 @@
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b2.png" alt="">
                                     <h5>Perfect treatment</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel
+                                        aliquam manta lagorn.</p>
                                 </div>
                             </div>
 
@@ -613,7 +788,8 @@
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b3.png" alt="">
                                     <h5>100% Natural Ayurvedic treatment</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel
+                                        aliquam manta lagorn.</p>
                                 </div>
                             </div>
 
@@ -622,7 +798,8 @@
                                 <div class="single-benefits-area">
                                     <img src="img/core-img/b4.png" alt="">
                                     <h5>Friendly Doctors</h5>
-                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel aliquam manta lagorn.</p>
+                                    <p>Intiam eu sagittis est, at commodo lacini libero. Praesent dignissim sed odio vel
+                                        aliquam manta lagorn.</p>
                                 </div>
                             </div>
                         </div>
@@ -673,12 +850,14 @@
             <div class="row alazea-portfolio">
 
                 <!-- Single Portfolio Area -->
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp"
+                    data-wow-delay="100ms">
                     <!-- Portfolio Thumbnail -->
                     <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/AA.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/AA.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                        <a href="img/bg-img/AA.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
                             <div class="port-hover-text">
                                 <h3>Consultation</h3>
                                 <h5></h5>
@@ -690,10 +869,12 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/SPINE.jpeg');"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/SPINE.jpeg');">
+                    </div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/SPINE.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                        <a href="img/bg-img/SPINE.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
                             <div class="port-hover-text">
                                 <h3>Spine Treatment</h3>
                                 <h5>Office Plants</h5>
@@ -703,12 +884,14 @@
                 </div>
 
                 <!-- Single Portfolio Area -->
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp" data-wow-delay="300ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp"
+                    data-wow-delay="300ms">
                     <!-- Portfolio Thumbnail -->
                     <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/ABC.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/ABC.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
+                        <a href="img/bg-img/ABC.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
                             <div class="port-hover-text">
                                 <h3>Hospital beds</h3>
                                 <h5></h5>
@@ -718,12 +901,14 @@
                 </div>
 
                 <!-- Single Portfolio Area -->
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp" data-wow-delay="400ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp"
+                    data-wow-delay="400ms">
                     <!-- Portfolio Thumbnail -->
                     <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/BCD.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/BCD.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                        <a href="img/bg-img/BCD.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
                             <div class="port-hover-text">
                                 <h3>Operational tools</h3>
                                 <h5></h5>
@@ -733,12 +918,14 @@
                 </div>
 
                 <!-- Single Portfolio Area -->
-                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp"
+                    data-wow-delay="100ms">
                     <!-- Portfolio Thumbnail -->
                     <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/EFG.jpeg');"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/EFG.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                        <a href="img/bg-img/EFG.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
                             <div class="port-hover-text">
                                 <h3>Blood pressure machine</h3>
                                 <h5></h5>
@@ -750,10 +937,12 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/REPORT.jpeg');"></div>
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url('img/bg-img/REPORT.jpeg');">
+                    </div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/REPORT.jpeg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                        <a href="img/bg-img/REPORT.jpeg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
                             <div class="port-hover-text">
                                 <h3>Reports</h3>
                                 <h5></h5>
@@ -765,10 +954,12 @@
                 <!-- Single Portfolio Area -->
                 <div class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp" data-wow-delay="300ms">
                     <!-- Portfolio Thumbnail -->
-                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/news_2131-890-520-20200715155127.jpg);"></div>
+                    <div class="portfolio-thumbnail bg-img"
+                        style="background-image: url(img/bg-img/news_2131-890-520-20200715155127.jpg);"></div>
                     <!-- Portfolio Hover Text -->
                     <div class="portfolio-hover-overlay">
-                        <a href="img/bg-img/news_2131-890-520-20200715155127.jpg" class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
+                        <a href="img/bg-img/news_2131-890-520-20200715155127.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
                             <div class="port-hover-text">
                                 <h3>tourism</h3>
                                 <h5>Hello</h5>
@@ -804,7 +995,10 @@
                                             <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
+                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up
+                                            with imaginative solutions to some tricky issues, their landscaping and
+                                            planting contacts are equally excellent we have a beautiful but also
+                                            manageable garden as a result. Thank you!”</p>
                                         <div class="testimonial-author-info">
                                             <h6>Mr. Nick Jonas</h6>
                                             <p>CEO of NAVATECH</p>
@@ -829,7 +1023,10 @@
                                             <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
+                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up
+                                            with imaginative solutions to some tricky issues, their landscaping and
+                                            planting contacts are equally excellent we have a beautiful but also
+                                            manageable garden as a result. Thank you!”</p>
                                         <div class="testimonial-author-info">
                                             <h6>Mr. Nazrul Islam</h6>
                                             <p>CEO of NAVATECH</p>
@@ -854,7 +1051,10 @@
                                             <h2>our patients</h2>
                                             <p>Some kind words from clients about Alazea</p>
                                         </div>
-                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up with imaginative solutions to some tricky issues, their landscaping and planting contacts are equally excellent we have a beautiful but also manageable garden as a result. Thank you!”</p>
+                                        <p>“Alazea is a pleasure to work with. Their ideas are creative, they came up
+                                            with imaginative solutions to some tricky issues, their landscaping and
+                                            planting contacts are equally excellent we have a beautiful but also
+                                            manageable garden as a result. Thank you!”</p>
                                         <div class="testimonial-author-info">
                                             <h6>Mr. Jonas Nick</h6>
                                             <p>CEO of NAVATECH</p>
@@ -890,7 +1090,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Product Image -->
-                        <div class="product-img" style="overflow: hidden";>
+                        <div class="product-img" style="overflow: hidden" ;>
                             <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet.jpeg" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag">
@@ -938,7 +1138,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Product Image -->
-                        <div class="product-img" style="overflow: hidden";>
+                        <div class="product-img" style="overflow: hidden" ;>
                             <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet1.jpeg" alt=""></a>
                             <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
@@ -960,7 +1160,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="400ms">
                         <!-- Product Image -->
-                        <div class="product-img" style="overflow: hidden";>
+                        <div class="product-img" style="overflow: hidden" ;>
                             <a href="shop-details.html"><img class="inter-zoom" src="img/bg-img/tet3.jpeg" alt=""></a>
                             <!-- Product Tag -->
                             <div class="product-tag sale-tag">
@@ -969,8 +1169,8 @@
                             <!-- <div class="product-meta d-flex">
                                 <a href="#" class="wishlist-btn"><i class="icon_heart_alt"></i></a>
                                  <a href="cart.html" class="add-to-cart-btn">Add to cart</a> -->
-                                <!-- <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
-                            </div> --> 
+                            <!-- <a href="#" class="compare-btn"><i class="arrow_left-right_alt"></i></a>
+                            </div> -->
                         </div>
                         <!-- Product Info -->
                         <div class="product-info mt-15 text-center">
@@ -1014,13 +1214,15 @@
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">
-                                <h5>Garden designers across the country forecast ideas shaping the gardening world in 2018</h5>
+                                <h5>Garden designers across the country forecast ideas shaping the gardening world in
+                                    2018</h5>
                             </a>
                             <div class="post-meta">
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
                             </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec
+                                lacus sit amet. Aenean interdus mid vitae.</p>
                         </div>
                     </div>
                 </div>
@@ -1033,13 +1235,15 @@
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">
-                                <h5>2018 Midwest Tree and Shrub Conference: Resilient Plants for a Lasting Landscape</h5>
+                                <h5>2018 Midwest Tree and Shrub Conference: Resilient Plants for a Lasting Landscape
+                                </h5>
                             </a>
                             <div class="post-meta">
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
                             </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec
+                                lacus sit amet. Aenean interdus mid vitae.</p>
                         </div>
                     </div>
                 </div>
@@ -1052,13 +1256,15 @@
                         </div>
                         <div class="post-content">
                             <a href="single-post.html" class="post-title">
-                                <h5>The summer coming up, it’s time for both us and the flowers to soak up the sunshine</h5>
+                                <h5>The summer coming up, it’s time for both us and the flowers to soak up the sunshine
+                                </h5>
                             </a>
                             <div class="post-meta">
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
                             </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec
+                                lacus sit amet. Aenean interdus mid vitae.</p>
                         </div>
                     </div>
                 </div>
@@ -1082,7 +1288,8 @@
                 <div class="col-12 col-lg-6">
                     <div class="subscribe-form">
                         <form action="#" method="get">
-                            <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Enter your email">
+                            <input type="email" name="subscribe-email" id="subscribeEmail"
+                                placeholder="Enter your email">
                             <button type="submit" class="btn alazea-btn">SUBSCRIBE</button>
                         </form>
                     </div>
@@ -1113,22 +1320,26 @@
                             <div class="row">
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                                        <input type="text" class="form-control" id="contact-name"
+                                            placeholder="Your Name">
                                     </div>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="contact-email"
+                                            placeholder="Your Email">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="contact-subject"
+                                            placeholder="Subject">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10"
+                                            placeholder="Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -1142,7 +1353,9 @@
                 <div class="col-12 col-lg-6">
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137" allowfullscreen></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -1258,10 +1471,14 @@
                     <!-- Copywrite Text -->
                     <div class="col-12 col-md-6">
                         <div class="copywrite-text">
-                            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+                            <p>&copy;
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
                         </div>
                     </div>
                     <!-- Footer Nav -->
