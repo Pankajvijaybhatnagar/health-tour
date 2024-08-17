@@ -9,6 +9,41 @@
             $(this).remove();
         });
     });
+    $(document).ready(function(){
+        $("#testimonial-slider").owlCarousel({
+            items:2,
+            itemsDesktop:[1000,2],
+            itemsDesktopSmall:[979,2],
+            itemsTablet:[768,2],
+            itemsMobile:[650,1],
+            pagination:true,
+            navigation:false,
+            slideSpeed:1000,
+            autoPlay:true
+        });
+    });
+    // doctrcrd2 strt----------------------
+    
+    
+    // doctrcrd2 end----------------------
+
+
+    // faqs js----------------------
+
+    $('.accordion-wrapper .btn-wrapper button').on('click', function (e) {  
+    
+        $(this).parent().siblings().slideToggle("slide");
+        $(this).parent().parent().toggleClass("active");
+        $(this).parent().parent().siblings().removeClass("active");
+        $(this)
+          .parent()
+          .parent()
+          .siblings()
+          .children(".collepsing-div")
+          .slideUp("medium");
+      });
+
+    // faqs js ennd-----------------------/
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
