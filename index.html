@@ -660,20 +660,19 @@
 
                 <!-- Single Blog Post Area -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card single-blog-post mb-3">
-                        <a href="single-post.html">
-                            <img src="img/bg-img/treatments1.jpg" class="card-img-top post-thumbnail" alt="">
-                        </a>
-                        <div class="card-body post-content">
-                            <a href="single-post.html" class="card-title post-title align-center">
-                                <h5 class="mb-3">AYURVEDIC</h5>
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail mb-30">
+                            <a href="single-post.html"><img src="img/bg-img/doctor-encouraging-a-patient.jpg" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="single-post.html" class="post-title">
+                                <h5>Ayurvedic</h5>
                             </a>
-                            <div class="post-meta mb-3">
+                            <div class="post-meta">
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
-                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
                             </div>
-                            <p class="card-text post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus
-                                ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
                         </div>
                     </div>
                 </div>
@@ -844,6 +843,75 @@
         </div>
     </section>
     <!-- ##### About Area End ##### -->
+     <!-- timer ------------------------->
+    <div>
+        <div class="counter-container">
+            <div class="counter-item">
+                <div class="number" data-target="825795">0</div>
+                <p>Medical Visas issued from 2019 to 2021</p>
+            </div>
+            <div class="counter-item">
+                <div class="number" data-target="1600">0</div>
+                <p>NABH Accredited Hospitals</p>
+            </div>
+            <div class="counter-item">
+                <div class="number" data-target="165">0</div>
+                <p>Countries listed on e-medical visas</p>
+            </div>
+        </div>
+        <script>
+            const counters = document.querySelectorAll('.number');
+            const speed = 1300; // The lower the speed, the faster the counter
+        
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+        
+                    // Lower inc to slow and higher to speed up
+                    const inc = target / speed;
+        
+                    // Check if target is reached
+                    if (count < target) {
+                        // Add inc to count and output in counter
+                        counter.innerText = Math.ceil(count + inc);
+                        // Call function every 1 ms
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+        
+                updateCount();
+            });
+        </script>
+        <style>
+            .counter-container {
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb(165, 235, 130);
+                color: white;
+                padding: 30px;
+                font-family: Arial, sans-serif;
+                font-size: 2em;
+            }
+    
+            .counter-item {
+                text-align: center;
+            }
+    
+            .number {
+                font-size: 3em;
+                font-weight: bold;
+            }
+        </style>
+    </div>
+
+
+
+
+
+     <!-- timerend-------------------- -->
 
     <!-- ##### Portfolio Area Start ##### -->
     <section class="alazea-portfolio-area section-padding-100-0">
@@ -865,10 +933,10 @@
                     <div class="alazea-portfolio-filter">
                         <div class="portfolio-filter">
                             <button class="btn active" data-filter="*">All</button>
-                            <button class="btn" data-filter=".design">Coffee Design</button>
-                            <button class="btn" data-filter=".garden">Garden</button>
-                            <button class="btn" data-filter=".home-design">Home Design</button>
-                            <button class="btn" data-filter=".office-design">Office Design</button>
+                            <button class="btn" data-filter=".design">A</button>
+                            <button class="btn" data-filter=".garden">B</button>
+                            <button class="btn" data-filter=".home-design">C</button>
+                            <button class="btn" data-filter=".office-design">D</button>
                         </div>
                     </div>
                 </div>
