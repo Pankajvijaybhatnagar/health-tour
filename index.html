@@ -276,6 +276,77 @@
 
         </div>
     </section>
+         <!-- timer ------------------------->
+         <div>
+            <div class="counter-container">
+                <div class="counter-item">
+                    <div class="number" data-target="825795">0</div>
+                    <p>Medical Visas issued from 2019 to 2021</p>
+                </div>
+                <div class="counter-item">
+                    <div class="number" data-target="1600">0</div>
+                    <p>NABH Accredited Hospitals</p>
+                </div>
+                <div class="counter-item">
+                    <div class="number" data-target="165">0</div>
+                    <p>Countries listed on e-medical visas</p>
+                </div>
+            </div>
+            <script>
+                const counters = document.querySelectorAll('.number');
+                const speed = 1300; // The lower the speed, the faster the counter
+            
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+            
+                        // Lower inc to slow and higher to speed up
+                        const inc = target / speed;
+            
+                        // Check if target is reached
+                        if (count < target) {
+                            // Add inc to count and output in counter
+                            counter.innerText = Math.ceil(count + inc);
+                            // Call function every 1 ms
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+            
+                    updateCount();
+                });
+            </script>
+            <style>
+                .counter-container {
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: rgb(165, 235, 130);
+                    color: white;
+                    /* padding: 30px; */
+                    font-family: Arial, sans-serif;
+                    font-size: 2em;
+                    height: 30vh;
+                }
+        
+                .counter-item {
+                    text-align: center;
+                    
+                }
+        
+                .number {
+                    font-size: 3em;
+                    font-weight: bold;
+                }
+            </style>
+        </div>
+    
+    
+    
+    
+    
+         <!-- timerend-------------------- -->
 
     <!-- ##### Hero Area End ##### -->
     <!-- doctor card -->
@@ -820,75 +891,7 @@
         </div>
     </section>
     <!-- ##### About Area End ##### -->
-     <!-- timer ------------------------->
-    <div>
-        <div class="counter-container">
-            <div class="counter-item">
-                <div class="number" data-target="825795">0</div>
-                <p>Medical Visas issued from 2019 to 2021</p>
-            </div>
-            <div class="counter-item">
-                <div class="number" data-target="1600">0</div>
-                <p>NABH Accredited Hospitals</p>
-            </div>
-            <div class="counter-item">
-                <div class="number" data-target="165">0</div>
-                <p>Countries listed on e-medical visas</p>
-            </div>
-        </div>
-        <script>
-            const counters = document.querySelectorAll('.number');
-            const speed = 1300; // The lower the speed, the faster the counter
-        
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-        
-                    // Lower inc to slow and higher to speed up
-                    const inc = target / speed;
-        
-                    // Check if target is reached
-                    if (count < target) {
-                        // Add inc to count and output in counter
-                        counter.innerText = Math.ceil(count + inc);
-                        // Call function every 1 ms
-                        setTimeout(updateCount, 1);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-        
-                updateCount();
-            });
-        </script>
-        <style>
-            .counter-container {
-                display: flex;
-                justify-content: space-around;
-                background-color: rgb(165, 235, 130);
-                color: white;
-                padding: 30px;
-                font-family: Arial, sans-serif;
-                font-size: 2em;
-            }
     
-            .counter-item {
-                text-align: center;
-            }
-    
-            .number {
-                font-size: 3em;
-                font-weight: bold;
-            }
-        </style>
-    </div>
-
-
-
-
-
-     <!-- timerend-------------------- -->
 
     <!-- ##### Portfolio Area Start ##### -->
     <section class="alazea-portfolio-area section-padding-100-0">
