@@ -16,6 +16,10 @@ Version: - v1.0
 @import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/elegant-icon.css);
+
+:root{
+  --clr1:#275c36
+}
 /* :: 3.0 Base CSS */
 * {
   margin: 0;
@@ -519,7 +523,7 @@ img {
         opacity: 1;
         visibility: visible; }
   .header-area .is-sticky .alazea-main-menu {
-    background-color: #111111;
+    background-color: var(--clr1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -2693,7 +2697,7 @@ img {
 }
 .card:hover {
 background-color: #e4e9dc;
-scale: 1.1;
+/* scale: 1.1; */
 }
 
 .service-box {
@@ -2792,11 +2796,11 @@ scale: 1.1;
   gap: 20px;
 }
 .doctor-grid.left {
-  max-width: 450px;
+  max-width: 350px;
 }
 
 .doctor-grid.right {
-  max-width: 450px;
+  max-width: 350px;
 }
 
 .doctor-grid {
