@@ -237,9 +237,10 @@
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
                                 <h2>NABH APPROVED HOSPITALS</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante
-                                    nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis
-                                    nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                <p>"Experience the pinnacle of healthcare in NABH accredited hospitals, where advanced medical technology meets the highest
+                                standards of patient care. Whether it's critical surgeries or specialized treatments, our hospitals are equipped to
+                                offer you the best in medical expertise and compassionate care, ensuring your health journey is seamless and
+                                successful."</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
                                     <a href="#" class="btn alazea-btn active">CONTACT US</a>
@@ -252,7 +253,7 @@
 
             <!-- Single Hero Post -->
             <div class="single-hero-post bg-overlay">
-                Post Image
+                <!-- Post Image -->
                 <div class="slide-img bg-img"
                     style="background-image: url(img/bg-img/doctor-reaches-towards-shelf.jpg);"></div>
                 <div class="container h-100">
@@ -261,9 +262,9 @@
                             <!-- Post Content -->
                             <div class="hero-slides-content text-center">
                                 <h2>SPECIALIZED DOCTORS</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante
-                                    nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis
-                                    nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
+                                <p>"Receive care from the world's finest medical specialists who are leaders in their fields. Our network of experienced
+                                doctors is dedicated to providing personalized treatment plans tailored to your needs. From consultation to recovery,
+                                trust our experts to guide you every step of the way, ensuring optimal outcomes and peace of mind."</p>
                                 <div class="welcome-btn-group">
                                     <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
                                     <a href="#" class="btn alazea-btn active">CONTACT US</a>
@@ -276,82 +277,17 @@
 
         </div>
     </section>
-         <!-- timer ------------------------->
-         <div>
-            <div class="counter-container">
-                <div class="counter-item">
-                    <div class="number" data-target="825795">0</div>
-                    <p>Medical Visas issued from 2019 to 2021</p>
-                </div>
-                <div class="counter-item">
-                    <div class="number" data-target="1600">0</div>
-                    <p>NABH Accredited Hospitals</p>
-                </div>
-                <div class="counter-item">
-                    <div class="number" data-target="165">0</div>
-                    <p>Countries listed on e-medical visas</p>
-                </div>
-            </div>
-            <script>
-                const counters = document.querySelectorAll('.number');
-                const speed = 1300; // The lower the speed, the faster the counter
-            
-                counters.forEach(counter => {
-                    const updateCount = () => {
-                        const target = +counter.getAttribute('data-target');
-                        const count = +counter.innerText;
-            
-                        // Lower inc to slow and higher to speed up
-                        const inc = target / speed;
-            
-                        // Check if target is reached
-                        if (count < target) {
-                            // Add inc to count and output in counter
-                            counter.innerText = Math.ceil(count + inc);
-                            // Call function every 1 ms
-                            setTimeout(updateCount, 1);
-                        } else {
-                            counter.innerText = target;
-                        }
-                    };
-            
-                    updateCount();
-                });
-            </script>
-            <style>
-                .counter-container {
-                    display: flex;
-                    justify-content: space-around;
-                    background-color: rgb(165, 235, 130);
-                    color: white;
-                    /* padding: 30px; */
-                    font-family: Arial, sans-serif;
-                    font-size: 2em;
-                    height: 30vh;
-                }
-        
-                .counter-item {
-                    text-align: center;
-                    
-                }
-        
-                .number {
-                    font-size: 3em;
-                    font-weight: bold;
-                }
-            </style>
-        </div>
-    
-    
-    
-    
-    
-         <!-- timerend-------------------- -->
+
 
     <!-- ##### Hero Area End ##### -->
     <!-- doctor card -->
     <!-- drcrds------------------ -->
-    <section class="section-padding-100-0 my-5">
+    <section class="section-padding-100-0 mb-5">
+        <!-- Section Heading -->
+        <div class="section-heading text-center ">
+            <h2 style="color: var(--clr1);" class="mb-5 ">OUR Doctors Team</h2>
+            
+        </div>
         <div class="container doctor-section">
             <div class="doctor-grid left">
                 <img src="img\bg-img\yogesh.jpeg" alt="Doctor 1" onclick="showDetails('card1')">
@@ -482,7 +418,7 @@
                         <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
                             <!-- Icon -->
                             <div class="service-icon mr-30">
-                                <img src="img/core-img/s1.png" alt="">
+                                <img  src="img/core-img/s1.png" alt="">
                             </div>
                             <!-- Content -->
                             <div class="service-content">
@@ -524,6 +460,7 @@
                 </div>
                 <style>
                     .jahaj {
+                        transform-origin: left;
                         animation: move 10s forwards infinite;
                     }
 
@@ -544,7 +481,7 @@
                     }
                 </style>
                 <div class="col-12 col-lg-6 position-relative ">
-                    <img class="z-inde" src="img/bg-img/hppng.png" alt="">
+                    <img style="width: 100% !important; transform: translateY(-103px);" class="position-absolute md:position-relative" src="img/bg-img/hppng.png" alt="">
                     <img class="position-absolute jahaj" src="img/bg-img/pl.png" alt="">
                     <!-- <div class="alazea-video-area bg-overlay mb-100">
                         <img src="img/bg-img/23.jpg" alt="">
@@ -743,7 +680,8 @@
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
                             </div>
-                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec lacus sit amet. Aenean interdus mid vitae.</p>
+                            <p class="post-excerpt">Integer luctus diam ac scerisque consectetur. Vimus ottawas nec
+                                lacus sit amet. Aenean interdus mid vitae.</p>
                         </div>
                     </div>
                 </div>
@@ -794,6 +732,80 @@
     </section>
 
     <!-- ------------------------------------------------------------------------------------------------------------ -->
+
+
+
+    <!-- timer ------------------------->
+    <div>
+    <style>
+        .counter-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #5c8c6c;
+            color: white;
+            /* padding: 30px; */
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+            height: fit-content;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    
+        .counter-item {
+            text-align: center;
+    
+        }
+    
+        .number {
+            font-size: 3em;
+            font-weight: bold;
+        }
+    </style>
+        <div class="counter-container py-2">
+            <div class="counter-item">
+                <div class="number" data-target="825795">0</div>
+                <p class="text-light">Medical Visas issued from 2019 to 2021</p>
+            </div>
+            <div class="counter-item">
+                <div class="number" data-target="1600">0</div>
+                <p class="text-light">NABH Accredited Hospitals</p>
+            </div>
+            <div class="counter-item">
+                <div class="number" data-target="165">0</div>
+                <p class="text-light">Countries listed on e-medical visas</p>
+            </div>
+        </div>
+        <script>
+            const counters = document.querySelectorAll('.number');
+            const speed = 1300; // The lower the speed, the faster the counter
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+
+                    // Lower inc to slow and higher to speed up
+                    const inc = target / speed;
+
+                    // Check if target is reached
+                    if (count < target) {
+                        // Add inc to count and output in counter
+                        counter.innerText = Math.ceil(count + inc);
+                        // Call function every 1 ms
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        </script>
+       
+    </div>
+    <!-- timerend-------------------- -->
+
+
     <!-- ##### About Area Start ##### -->
     <section class="about-us-area section-padding-100-0">
         <div class="container">
@@ -914,7 +926,7 @@
         </div>
     </section>
     <!-- ##### About Area End ##### -->
-    
+
 
     <!-- ##### Portfolio Area Start ##### -->
     <section class="alazea-portfolio-area section-padding-100-0">
@@ -1278,9 +1290,11 @@
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Alan Jackson</a>
                             </div>
-                            <p class="post-excerpt">Imagine recovering from surgery surrounded by the calming sounds of nature, with scenic views that soothe the soul.
-                            Medical tourism in tropical paradises offers this unique blend of healthcare and tranquility, making it a popular choice
-                            for patients seeking both physical and mental rejuvenation.</p>
+                            <p class="post-excerpt">Imagine recovering from surgery surrounded by the calming sounds of
+                                nature, with scenic views that soothe the soul.
+                                Medical tourism in tropical paradises offers this unique blend of healthcare and
+                                tranquility, making it a popular choice
+                                for patients seeking both physical and mental rejuvenation.</p>
                         </div>
                     </div>
                 </div>
@@ -1300,9 +1314,11 @@
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 20 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Christina Aguilera</a>
                             </div>
-                            <p class="post-excerpt">Modern healthcare meets nature in a harmonious blend of cutting-edge medical treatments and lush greenery. As patients
-                            seek environments that promote overall wellness, medical facilities nestled in botanical settings are becoming
-                            increasingly popular, offering a holistic approach to recovery.</p>
+                            <p class="post-excerpt">Modern healthcare meets nature in a harmonious blend of cutting-edge
+                                medical treatments and lush greenery. As patients
+                                seek environments that promote overall wellness, medical facilities nestled in botanical
+                                settings are becoming
+                                increasingly popular, offering a holistic approach to recovery.</p>
                         </div>
                     </div>
                 </div>
@@ -1322,9 +1338,11 @@
                                 <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> 19 Jun 2018</a>
                                 <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Mason Jenkins</a>
                             </div>
-                            <p class="post-excerpt">Medical tourism is your gateway to experiencing global healthcare while exploring new cultures. From the ancient healing
-                            traditions of Asia to the cutting-edge facilities in Europe, discover how you can combine your medical journey with an
-                            enriching travel experience.</p>
+                            <p class="post-excerpt">Medical tourism is your gateway to experiencing global healthcare
+                                while exploring new cultures. From the ancient healing
+                                traditions of Asia to the cutting-edge facilities in Europe, discover how you can
+                                combine your medical journey with an
+                                enriching travel experience.</p>
                         </div>
                     </div>
                 </div>
@@ -1414,12 +1432,13 @@
                     <!-- Google Maps -->
                     <div class="map-area mb-100">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137"
-                            allowfullscreen></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3927659413303!2d76.88509377505834!3d29.968140422182877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e46c929dacd87%3A0x411dbf9c880cc833!2sBig%20Byte%20Innovations%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1723963326423!5m2!1sen!2sin"
+                            width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- ##### Contact Area End ##### -->
 
@@ -1436,7 +1455,7 @@
                             <!-- <div class="footer-logo mb-30">
                                 <a href="#"><img src="img/core-img/logo.png" alt=""></a>
                             </div> -->
-                            <p>Lorem ipsum dolor sit samet, consectetur adipiscing elit. India situs atione mantor</p>
+                            <p>"Your Global Gateway to Wellness: Elevating Healthcare Through Medical Tourism"</p>
                             <div class="social-info">
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -1535,7 +1554,7 @@
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;
                                 <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                                 is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
                                     href="https://bigbyteworld.com" target="_blank">Bigbyte Innovations Pvt. Ltd.</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
