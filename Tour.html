@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Your City</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .hero-section {
+            background-image: url('https://example.com/your_background_image.jpg'); /* Replace with your image */
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .highlight-categories {
+            margin-top: 40px;
+        }
+
+        .highlight-categories .card {
+            transition: transform 0.2s;
+        }
+
+        .highlight-categories .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Explore your amazing city</h1>
+        <p class="lead">Find great places to stay, eat, shop, or visit from local experts.</p>
+
+        <!-- Search Bar -->
+        <div class="search-bar d-inline-block">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ex: food, service, hotel" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Where" aria-label="Location">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Highlight Categories -->
+<div class="container highlight-categories">
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://example.com/restaurant_icon.png" alt="Restaurant Icon" width="50">
+                    <h5 class="card-title">Restaurant</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://example.com/hotel_icon.png" alt="Hotel Icon" width="50">
+                    <h5 class="card-title">Hotel</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://example.com/places_icon.png" alt="Places Icon" width="50">
+                    <h5 class="card-title">Places</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <img src="https://example.com/shopping_icon.png" alt="Shopping Icon" width="50">
+                    <h5 class="card-title">Shopping</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
