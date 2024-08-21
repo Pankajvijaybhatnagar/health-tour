@@ -2693,7 +2693,8 @@ img {
 }
 .card:hover {
 background-color: #e4e9dc;
-scale: 1.1;
+box-shadow: inset 0 10px 20px #313130c2
+
 }
 
 .service-box {
@@ -2704,8 +2705,9 @@ scale: 1.1;
 
 .service-box:hover {
   transform: scale(1.05);
-  box-shadow: inset 0 10px 20px #70c745c2;
 }
+
+
 
 /* ----------------------------------------------faqs css---------------------------------------------------------- */
 
@@ -2725,7 +2727,7 @@ scale: 1.1;
 .accordion-wrapper .btn-wrapper button:after,
 .accordion-wrapper .btn-wrapper button:before {
   content: "";
-  background: #70c745c2;
+  background: #6fc245c2;
   width: 20px;
   height: 2px;
   display: block;
@@ -2871,6 +2873,9 @@ scale: 1.1;
   z-index: 5; 
   transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
 }
+.cards p{
+  color: #000000;
+}
 
 
 @media (max-width: 768px) {
@@ -2911,7 +2916,567 @@ scale: 1.1;
 }
 /* dr2end------------------------ */
 
+/* about us ------------------------------------------------------- */
 
+h1{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.cols{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container{
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+	background-position: center;
+	-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+	-webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	text-align: center;
+	min-height: 280px;
+	height: auto;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.back{
+  background: #70c745c2;
+  background: -webkit-linear-gradient(45deg,  #70c745c2 0%,#70c745c2 100%);
+  background: -o-linear-gradient(45deg,  #70c745c2 0%,#70c745c2 100%);
+  background: linear-gradient(45deg,  #70c745c2 0%,#70c745c2 100%);
+}
+.back .inner p {
+  color: #000000;
+}
+
+.front:after{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    opacity: .6;
+    background-color: #000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 10px;
+}
+.container:hover .front,
+.container:hover .back{
+    -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.inner{
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+            transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit; 
+            perspective: inherit;
+    z-index: 2;
+}
+
+.container .back{
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container .front{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.front .inner p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after{
+  content: '';
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #C6D4DF;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -.75rem;
+}
+
+.front .inner h3{
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@media screen and (max-width: 64rem){
+  .col{
+    width: calc(33.333333% - 2rem);
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .col{
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 32rem){
+  .col{
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+/* about us end ------------------------------------------------------- */
+
+
+/* <!-- Advantages--------------------------- --> */
+
+
+/******************************************************************\
+ * READ FIRST:
+ *
+ * The target for this solution is keep compatibility with old
+ * browsers by using only the float property.
+ *
+ * Four Card Section Challenge | Main Stylesheet.
+ *
+ * Challenge by Frontend Mentor. Coded by Alfonso Suarez.
+ * 
+ ******************************************************************/
+
+/*
+ * # Common Styles Rules 
+ */
+
+/*
+ * ## Global
+ */
+
+/* 
+ * I would prefer to declare variables, but due the bad compatibility
+ * between IE browsers and CSS variables, I omitted their use.
+ *
+:root {
+  --color-prim-cyan:   hsl(180, 62%, 55%);
+  --color-prim-red:    hsl(0, 78%, 62%);
+  --color-prim-orange: hsl(34, 97%, 64%);
+  --color-prim-blue:   hsl(212, 86%, 64%);
+  --color-neut-vdblue: hsl(234, 12%, 34%);
+  --color-neut-grblue: hsl(229, 6%, 66%);  
+}
+ *
+ */
+
+/*
+ * ## Document Body
+ */
+
+ body {
+  /* Clean content offset */
+  margin: 0; padding: 0;
+
+  /* Set common font styles */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/*
+ * ## Elements Styles
+ */
+
+h1, h2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+p { color: hsl(229, 6%, 66%); }
+
+/* - - - */
+
+/*
+ * # Specific Styles Rules
+ */
+
+/*
+ * ## Main Header Element
+ */
+
+header {
+  margin: 80px 30px 75px;
+  text-align: center;
+}
+
+header > h1 {
+  margin: 20px 0;
+  font-weight: 200;
+}
+
+header > h1 strong {
+  font-weight: 600;
+}
+
+header > p {
+  max-width: 520px;
+  margin: auto;
+}
+
+@media (max-width: 443px) {
+  header > h1 { font-size: 1.6em; }
+}
+ 
+/*
+ * ## Cards Container Class
+ */
+
+.cards-container {
+  /* List Styling Clean-Up */
+  list-style: none;
+  padding: 0; margin: 0;
+
+  /* Alignment */
+  margin: auto;
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When viewport width is equal or greater than 788 pixels,
+ * the cards container will fix its width and will append the
+ * clear fix pseudo-class to avoid float property issues.
+ *
+ * The width will depend from the current viewport width.
+ * If is greater than 1166 pixels, will be 1106 pixels.
+ * Else, then will be 728 pixels.
+ */
+
+@media (min-width: 788px) {
+  .cards-container { 
+    width: 728px;
+  }
+  /* Clear Fix */
+  .cards-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media (min-width: 1166px) {
+  .cards-container {
+    width: 1106px;
+  }
+}
+
+/*
+ * ## Feature Card Class
+ */
+
+[class$='feature-card'] {
+  /* Positioning and Sizing */
+  position: relative;
+  box-sizing: border-box;
+  width: 350px; height: 250px;
+
+  /* Alignment */
+  margin: 0;
+  padding: 32px;
+
+  /* Box Details */
+  border-radius: 10px;
+  border-top: solid 5px black;
+  box-shadow: 2px 5px 20px rgb(0,0,0,0.1);
+}
+ 
+/*
+ * ### Inner Elements
+ */
+
+[class$='feature-card'] h2, [class$='feature-card'] p { margin: 0; }
+
+[class$='feature-card'] img {
+  position: absolute;
+  bottom: 32px; right: 32px;
+}
+
+/*
+ * ### Top Border Colors Rules
+ */
+
+[class$='feature-card'][class*='cyan'] {
+  border-color: hsl(180, 62%, 55%);
+}
+
+[class$='feature-card'][class*='red'] {
+  border-color: hsl(0, 78%, 62%);
+}
+
+[class$='feature-card'][class*='orange'] {
+  border-color: hsl(34, 97%, 64%);
+}
+
+[class$='feature-card'][class*='blue'] {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When the viewport width is less than 788 pixels, the container
+ * will not be fixed and every card will arrange normally one over
+ * other. This layout is comfortable for mobile devices.
+ *
+ * But if is equal or greather, every card will set the float
+ * property to the left.
+ *
+ * They will sort smartly on a grid of two columns and two rows if
+ * the current viewport width is less than 1166 pixels, that is,
+ * for notebooks and tablets screens.
+ *
+ * Else, then they will sort like the final challenge for desktop
+ * larger screens (with a viewport width greather than 1166 pixels.)
+ *
+ * I had to hard coded every effect because I only use float
+ * properties. And I didn't went to use auxiliar HTML elements,
+ * trying to keep separation of concerns.
+ */
+
+@media (min-width: 788px) {
+  [class$='feature-card'] {
+    float: left;
+  }
+
+  @media (min-width: 1166px) {
+    
+    [class$='feature-card']:first-child {
+      margin: 140px 0;
+    }
+   
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(3) {
+      margin: 0 22px;
+    }
+
+    [class$='feature-card']:last-child {
+      margin-top: -110px;
+    }
+
+    [class$='feature-card']:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 1165px) {
+
+    [class$='feature-card']:nth-child(3),
+    [class$='feature-card']:nth-child(4) {
+      margin-top: 30px;
+    }
+
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(4) {
+      margin-left: 28px;
+    }
+  }
+}
+
+@media (max-width: 787px) {
+
+  [class$='feature-card'] {
+    width: 300px; height: 220px;
+    margin: auto;
+  }
+
+  [class$='feature-card']:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+
+/*
+ * ## Main Footer
+ */
+
+footer { margin-top: 80px }
+
+/*
+ * ## Attribution Watermark
+ */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+    /* <!-- advantages end-------------------------- --> */
+
+
+      .treatment-section {
+        padding: 40px 60px;
+    }
+
+    .treatment-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000c2;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .treatment-card {
+        background-color: #275c36;
+        border-radius:10px ;
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .treatment-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .treatment-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+        padding: 10px;
+        /* background-color: #f0f3ff; */
+        border-radius: 10px;
+        display: inline-block;
+        width: 120px;
+        height: 10px;
+        
+    }
+
+    .treatment-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .row-cols-custom {
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .treatment-set {
+        display: none;
+    }
+
+    .treatment-set.active {
+        display: flex;
+    }
+
+    .arrow-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .arrow-btn.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    .arrow-icon {
+        width: 15px;
+        height: 15px;
+        fill: #003d3b;
+    }
 
 
 /*# sourceMappingURL=style.css.map */
