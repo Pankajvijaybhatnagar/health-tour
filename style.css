@@ -373,7 +373,7 @@ img {
   position: absolute;
   width: 100%;
   z-index: 999;
-  top: 0;
+  top: -6em;
   left: 0;
   background-color: transparent;
 }
@@ -383,7 +383,7 @@ img {
   background-color: transparent;
   width: 100%;
   height: 42px;
-  border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+  /* border-bottom: 1px solid rgba(235, 235, 235, 0.2); */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-area .top-header-area {
@@ -3434,7 +3434,7 @@ img {
   font-size: 1rem;
 }
 .card-img-top {
-  max-width: 70% !important;
+  max-width: 100% !important;
   height: auto !important;
   aspect-ratio: 1 / 1 !important;
   object-fit: cover !important;
@@ -3462,6 +3462,9 @@ box-shadow: inset 0 10px 20px #313130c2
   transform: scale(1.05);
 }
 
+.service-row {
+  justify-content: center; /* Center the row content */
+}
 
 
 /* ----------------------------------------------faqs css---------------------------------------------------------- */
